@@ -42,6 +42,7 @@ RUN solana-keygen new --no-bip39-passphrase &&\
     solana airdrop 2
 
 COPY src src
+COPY scripts scripts
 COPY package.json package.json
 
 RUN npm run build &&\
